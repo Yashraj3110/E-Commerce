@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "../layout/navbar";
 import Footer from "../layout/footer";
 
-const Cart=()=>{
+const Cart=(prop)=>{
+    console.log(prop)
     return (
         <>
         <Navbar/>

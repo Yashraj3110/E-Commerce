@@ -105,7 +105,7 @@ const Footer = () => {
                     </div>
 
                     <div id="F2">
-                        <div className="row pb-3">
+                        <div className="row pb-3" style={{display:"flex"}}>
                             <ul>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
@@ -137,13 +137,16 @@ const Footer = () => {
                                         © 2007-2023 Flipkart.com
                                     </a>
                                 </li>
+
+
+                            </ul>
+                            <ul>
                                 <li class="nav-item">
                                     <Link to="/" className="logo"><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" height="19" alt="Flipkart" title="Flipkart" className="aqQN50" href=""></img>
 
                                     </Link>
                                     <img src="" />
                                 </li>
-
                             </ul>
                         </div>
                     </div>
