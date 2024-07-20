@@ -1,10 +1,11 @@
 import { useState } from "react"
 import Cart from "./cart"
 
-export default function Navbar() {
+export default function Navbar({ onStoreSelect }) {
 
     const [CartOpen, setCartOpen] = useState(false)
     const [WishList, setWishList] = useState(false)
+    const [selectedStore, setSelectedStore] = useState(null);
 
     function OpenCart() {
         if (CartOpen === false) {
@@ -19,6 +20,10 @@ export default function Navbar() {
         }
     }
 
+    function handleSelectStore(value) {
+        setSelectedStore(value);
+        onStoreSelect(value);
+    }
 
 
     return (
@@ -26,9 +31,9 @@ export default function Navbar() {
             {/* Navbar */}
 
 
-            <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+            <nav className="bg-white  fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
+                    <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Easy-Buy</span>
 
@@ -82,18 +87,20 @@ export default function Navbar() {
 
 
             {/* Products */}
-            <section className="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-16 mt-10">
+            <section className="bg-gray-50 py-8 antialiased  md:py-16  mt-8" style={{height:"170px"}}>
 
                 <div className="mx-auto max-w-screen-xl px-4 2xl:px-0" style={{
                     display: "flex",
-                    justifyContent: "space-evenly",
+                    justifyContent: "center",
                     alignItems: "center",
                     alignContent: "center",
                     flexWrap: "wrap"
                 }}>
                     <div>
 
-                        <a href="#" className="relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" style={{ width: "300px" }}>
+                        <a onClick={() => handleSelectStore("Electronics")}
+                            className={`relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Electronics" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
+                            style={{ width: "300px" }}>
                             <img src="assets/images/electronics.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-40" />
                             <div className="relative z-10">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ textAlign: "center" }}>Electronics</h5>
@@ -101,9 +108,12 @@ export default function Navbar() {
                         </a>
 
                     </div>
+                    <div className="divider lg:divider-horizontal "></div>
                     <div>
 
-                        <a href="#" className="relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" style={{ width: "300px" }}>
+                        <a onClick={() => handleSelectStore("Clothes")}
+                            className={`relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Clothes" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
+                            style={{ width: "300px" }}>
                             <img src="assets/images/clothes.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-50" />
                             <div className="relative z-10">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ textAlign: "center" }}>Clothes</h5>
