@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <>
       <Navbar onStoreSelect={handleStoreSelection} />
+      
 
       {/* Body */}
       <div class="bg-white container mx-auto px-6 pt-8">

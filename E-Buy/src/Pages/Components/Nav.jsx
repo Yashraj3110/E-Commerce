@@ -34,7 +34,7 @@ export default function Navbar({ onStoreSelect }) {
             <nav className="bg-white  fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
+                        <img src="/assets/logo/ebuy.png" className="h-9" alt="Flowbite Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Easy-Buy</span>
 
                     </a>
@@ -51,18 +51,15 @@ export default function Navbar({ onStoreSelect }) {
 
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
 
-                        <form class="max-w-md mx-auto pr-4" style={{ width: "350px" }}>
-                            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-                            <div class="relative">
-                                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                                    </svg>
-                                </div>
-                                <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Mockups, Logos..." required />
-                                <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
-                            </div>
-                        </form>
+                        <div class="relative max-w-lg mx-auto pr-10 mr-10" style={{ width: "200rem" }}>
+                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                                <svg class="h-5 w-5 text-gray-500" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+
+                            <input class="pl-10 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50" type="text" placeholder="Search" />
+                        </div>
 
                         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-2 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             {/* WishList */}
@@ -87,21 +84,20 @@ export default function Navbar({ onStoreSelect }) {
 
 
             {/* Products */}
-            <section className="bg-gray-50 py-8 antialiased  md:py-16  mt-8" style={{height:"170px"}}>
+            <section className="bg-gray-50 py-8 antialiased  md:py-16  mt-8" style={{ height: "170px" }}>
 
                 <div className="mx-auto max-w-screen-xl px-4 2xl:px-0" style={{
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    alignContent: "center",
-                    flexWrap: "wrap"
+                    alignContent: "center"
                 }}>
                     <div>
 
                         <a onClick={() => handleSelectStore("Electronics")}
                             className={`relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Electronics" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
-                            style={{ width: "300px" }}>
-                            <img src="assets/images/electronics.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-40" />
+                            style={{ width: "230px", borderRadius: "20px" }}>
+                            <img src="assets/images/electronics.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-40" style={{ borderRadius: "20px" }} />
                             <div className="relative z-10">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ textAlign: "center" }}>Electronics</h5>
                             </div>
@@ -113,8 +109,9 @@ export default function Navbar({ onStoreSelect }) {
 
                         <a onClick={() => handleSelectStore("Clothes")}
                             className={`relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Clothes" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
-                            style={{ width: "300px" }}>
-                            <img src="assets/images/clothes.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-50" />
+                            style={{ width: "230px", borderRadius: "20px" }}>
+                            <img src="assets/images/clothes.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-50"
+                                style={{ borderRadius: "20px" }} />
                             <div className="relative z-10">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ textAlign: "center" }}>Clothes</h5>
                             </div>
