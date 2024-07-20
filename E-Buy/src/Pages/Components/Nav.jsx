@@ -82,71 +82,61 @@ export default function Navbar({ onStoreSelect }) {
 
 
             {/* Products */}
-            <section className="bg-gray-50 py-8 antialiased  md:py-16  mt-8" style={{ height: "170px" }}>
-
-                <div className="mx-auto max-w-screen-xl px-4 2xl:px-0" style={{
-                    display: "flex",
-                    justifyContent: "space-evenly",
-                    alignItems: "center",
-                    alignContent: "center"
-                }}>
-                    <div>
-
+            <section className="bg-gray-50 py-8 antialiased md:py-16 mt-8" style={{ height: "170px" }}>
+                <div className="mx-auto max-w-screen-xl px-4 2xl:px-0 flex  justify-center gap-4">
+                    <div className="w-full sm:w-auto" id="cat-opt">
                         <a onClick={() => handleSelectStore("Electronics")}
-                            className={`relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Electronics" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
+                            className={`relative block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Electronics" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
                             style={{ width: "230px", borderRadius: "20px" }}>
-                            <img src="assets/images/electronics.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-40" style={{ borderRadius: "20px" }} />
+                            <div>
+                                <img src="assets/images/electronics.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-40" style={{ borderRadius: "20px" }} />
+                            </div>
                             <div className="relative z-10">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ textAlign: "center" }}>Electronics</h5>
                             </div>
                         </a>
-
                     </div>
-                    <div className="divider lg:divider-horizontal "></div>
-                    <div>
 
+                    <div className="w-full sm:w-auto" id="cat-opt">
                         <a onClick={() => handleSelectStore("Clothing")}
-                            className={`relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Clothing" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
+                            className={`relative block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Clothing" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
                             style={{ width: "230px", borderRadius: "20px" }}>
-                            <img src="assets/images/clothes.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-50"
-                                style={{ borderRadius: "20px" }} />
+                            <img src="assets/images/clothes.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-50" style={{ borderRadius: "20px" }} />
                             <div className="relative z-10">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ textAlign: "center" }}>Clothes</h5>
                             </div>
                         </a>
-
                     </div>
-                    <div className="divider lg:divider-horizontal "></div>
-                    <div>
 
+                    <div className="w-full sm:w-auto" id="cat-opt">
                         <a onClick={() => handleSelectStore("Kitchen")}
-                            className={`relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Kitchen" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
+                            className={`relative block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Kitchen" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
                             style={{ width: "230px", borderRadius: "20px" }}>
-                            <img src="assets/images/kitchen.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-50"
-                                style={{ borderRadius: "20px" }} />
+                            <div>
+                                <img src="assets/images/kitchen.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-50" style={{ borderRadius: "20px" }} />
+                            </div>
+
                             <div className="relative z-10">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ textAlign: "center" }}>Kitchen</h5>
                             </div>
                         </a>
-
                     </div>
-                    <div className="divider lg:divider-horizontal "></div>
-                    <div>
 
+                    <div className="w-full sm:w-auto" id="cat-opt">
                         <a onClick={() => handleSelectStore("Decoratives")}
-                            className={`relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Decoratives" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
+                            className={`relative block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Decoratives" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
                             style={{ width: "230px", borderRadius: "20px" }}>
-                            <img src="assets/images/home.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-50"
-                                style={{ borderRadius: "20px" }} />
+                            <div>
+                                <img src="assets/images/home.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-50" style={{ borderRadius: "20px" }} />
+                            </div>
                             <div className="relative z-10">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ textAlign: "center" }}>Decoratives</h5>
                             </div>
                         </a>
-
                     </div>
-
                 </div>
-            </section >
+            </section>
+
 
             <Cart CartOpen={CartOpen} onCartClose={OpenCart} />
 
