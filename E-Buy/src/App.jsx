@@ -1,12 +1,11 @@
 
 import './App.css';
-import Page from './components/page';
-import Cart from './components/cart';
+import Home from './Pages/Home';
 function App() {
   return (
     <>
-    <Page />
-    <Cart />
+    <Home />
+ 
     </>
   );
 }
