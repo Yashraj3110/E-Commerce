@@ -29,10 +29,8 @@ export default function Navbar({ onStoreSelect }) {
     return (
         <>
             {/* Navbar */}
-
-
             <nav className="bg-white  fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src="/assets/logo/ebuy.png" className="h-9" alt="Flowbite Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Easy-Buy</span>
@@ -88,7 +86,7 @@ export default function Navbar({ onStoreSelect }) {
 
                 <div className="mx-auto max-w-screen-xl px-4 2xl:px-0" style={{
                     display: "flex",
-                    justifyContent: "center",
+                    justifyContent: "space-evenly",
                     alignItems: "center",
                     alignContent: "center"
                 }}>
@@ -107,13 +105,41 @@ export default function Navbar({ onStoreSelect }) {
                     <div className="divider lg:divider-horizontal "></div>
                     <div>
 
-                        <a onClick={() => handleSelectStore("Clothes")}
-                            className={`relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Clothes" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
+                        <a onClick={() => handleSelectStore("Clothing")}
+                            className={`relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Clothing" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
                             style={{ width: "230px", borderRadius: "20px" }}>
                             <img src="assets/images/clothes.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-50"
                                 style={{ borderRadius: "20px" }} />
                             <div className="relative z-10">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ textAlign: "center" }}>Clothes</h5>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div className="divider lg:divider-horizontal "></div>
+                    <div>
+
+                        <a onClick={() => handleSelectStore("Kitchen")}
+                            className={`relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Kitchen" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
+                            style={{ width: "230px", borderRadius: "20px" }}>
+                            <img src="assets/images/kitchen.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-50"
+                                style={{ borderRadius: "20px" }} />
+                            <div className="relative z-10">
+                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ textAlign: "center" }}>Kitchen</h5>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div className="divider lg:divider-horizontal "></div>
+                    <div>
+
+                        <a onClick={() => handleSelectStore("Decoratives")}
+                            className={`relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${selectedStore === "Decoratives" ? "border-2 border-[#4747ff] rounded-lg" : ""}`}
+                            style={{ width: "230px", borderRadius: "20px" }}>
+                            <img src="assets/images/home.jpg" alt="Overlay Image" className="absolute inset-0 w-full h-full object-fit opacity-50"
+                                style={{ borderRadius: "20px" }} />
+                            <div className="relative z-10">
+                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ textAlign: "center" }}>Decoratives</h5>
                             </div>
                         </a>
 
