@@ -1,12 +1,13 @@
-import './App.css';
-import { Button } from "flowbite-react"
-import Example from './page';
 
+import './App.css';
+import Page from './components/page';
+import Cart from './components/cart';
 function App() {
   return (
-   <>
-   <Example />
-   </>
+    <>
+    <Page />
+    <Cart />
+    </>
   );
 }
 
