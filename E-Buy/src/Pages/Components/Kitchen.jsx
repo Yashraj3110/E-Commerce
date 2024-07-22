@@ -43,6 +43,7 @@ export default function Kitchen() {
                             </div>
                         </div>
                     </nav>
+
                     <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
                         <a href="#">
                             <div className="product-img">
@@ -85,6 +86,8 @@ export default function Kitchen() {
                             <p className="pt-1 text-gray-900">£9.99</p>
                         </a>
                     </div>
+
+                    
                 </div>
             </section>
 
