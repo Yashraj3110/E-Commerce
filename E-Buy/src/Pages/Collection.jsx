@@ -13,7 +13,7 @@ export default function Collection(params) {
                             <h2 class="text-2xl font-bold tracking-tight text-gray-900" >Clothing</h2>
                         </div>
                         <div>
-                            <a class="flex items-center mt-4 text-black text-sm uppercase font-medium rounded hover:underline focus:outline-none">
+                            <a href="/product/collection" class="flex items-center mt-4 text-black text-sm uppercase font-medium rounded hover:underline focus:outline-none">
                                 <span>Explore</span>
                                 <svg class="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
@@ -78,7 +78,7 @@ export default function Collection(params) {
                             <h2 class="text-2xl font-bold tracking-tight text-gray-900" >Electronics</h2>
                         </div>
                         <div>
-                            <a href="/collection" class="flex items-center mt-4 text-black text-sm uppercase font-medium rounded hover:underline focus:outline-none">
+                            <a href="/product/collection" class="flex items-center mt-4 text-black text-sm uppercase font-medium rounded hover:underline focus:outline-none">
                                 <span>Explore</span>
                                 <svg class="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
@@ -144,7 +144,7 @@ export default function Collection(params) {
                             <h2 class="text-2xl font-bold tracking-tight text-gray-900" >Back packs</h2>
                         </div>
                         <div>
-                            <a href="/collection" class="flex items-center mt-4 text-black text-sm uppercase font-medium rounded hover:underline focus:outline-none">
+                            <a href="/product/collection" class="flex items-center mt-4 text-black text-sm uppercase font-medium rounded hover:underline focus:outline-none">
                                 <span>Explore</span>
                                 <svg class="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
@@ -210,7 +210,7 @@ export default function Collection(params) {
                             <h2 class="text-2xl font-bold tracking-tight text-gray-900" >Gaming</h2>
                         </div>
                         <div>
-                            <a href="/collection" class="flex items-center mt-4 text-black text-sm uppercase font-medium rounded hover:underline focus:outline-none">
+                            <a href="/product/collection" class="flex items-center mt-4 text-black text-sm uppercase font-medium rounded hover:underline focus:outline-none">
                                 <span>Explore</span>
                                 <svg class="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
@@ -276,7 +276,7 @@ export default function Collection(params) {
                             <h2 class="text-2xl font-bold tracking-tight text-gray-900" >Accessories</h2>
                         </div>
                         <div>
-                            <a href="/collection" class="flex items-center mt-4 text-black text-sm uppercase font-medium rounded hover:underline focus:outline-none">
+                            <a href="/product/collection" class="flex items-center mt-4 text-black text-sm uppercase font-medium rounded hover:underline focus:outline-none">
                                 <span>Explore</span>
                                 <svg class="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
