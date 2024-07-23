@@ -1,0 +1,15 @@
+FROM node:20-alpine
+ENV PORT=8081
+
+WORKDIR /app
+# EXPOSE 8082
+COPY . .
+RUN npm install -f
+# RUN npm install -g concurrently
+# RUN cd server && npm install -f
+
+RUN npm run build
+RUN npm install -g serve
+
+
+CMD [ "npm","run","deploy" ]
