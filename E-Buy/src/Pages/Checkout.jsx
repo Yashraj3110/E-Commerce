@@ -94,6 +94,7 @@ export default function Checkout() {
                     </div>
 
                     <div class="max-w-4xl  w-full h-max rounded-md px-4 py-8 sticky top-0" style={{ display: "flex", justifyContent: "center" }}>
+
                         <div class="px-30">
                             <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-3 text-gray-800 font-light mb-6">
                                 <div class="w-full flex mb-3 items-center">
