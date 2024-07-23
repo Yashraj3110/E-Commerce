@@ -1,0 +1,48 @@
+{
+- Check out page
+- product page
+- Admin Dashboard
+} - 23 july
+
+
+{
+- collection page
+- All product Page
+- login form with session
+} - 24 to 26 july
+
+
+{
+- login Main Admin
+- Register Admin validate
+- login admin
+} - 27 to 28 july
+
+
+{ Admin (
+- create collection
+- create product
+- manage product
+- view product comments and reply
+)} - 29 to 31 july
+
+
+{ Admin (
+- manage product
+- view product comments and reply
+- return / refund section
+)} - 1 to 3 August
+
+
+{ User (
+- Manage profile
+- buy products ( with invoice on mail)
+- Review buy products
+- return products
+- recently viewd products
+- recomend on viewd
+)} - 4 to 10 August
+
+{
+    - Deploy on AWS using Docker
+}
